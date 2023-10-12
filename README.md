@@ -36,3 +36,10 @@ a = a ^ b;
 - Create image Element
 - Set the position of images
 - Listening window resize
+
+3. Flip animation
+
+- First: 记录要监控的元素位置
+- Last: 记录元素结构变化后的位置
+- Invert: 移动元素到 First 的位置
+- Play: 使用动画还原元素到本来的位置
