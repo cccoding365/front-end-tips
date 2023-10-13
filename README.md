@@ -43,3 +43,20 @@ a = a ^ b;
 - Last: 记录元素结构变化后的位置
 - Invert: 移动元素到 First 的位置
 - Play: 使用动画还原元素到本来的位置
+
+4. The maximum safe integer in JavaScript
+
+```js
+const x = Number.MAX_SAFE_INTEGER + 1;
+const y = Number.MAX_SAFE_INTEGER + 2;
+
+console.log(Number.MAX_SAFE_INTEGER);
+// Expected output: 9007199254740991
+
+console.log(x);
+// Expected output: 9007199254740992
+
+console.log(x === y);
+// Expected output: true
+
+```
